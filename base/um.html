@@ -1,0 +1,246 @@
+<html>
+
+<head>
+ 
+    <title>Funil de Vendas Perpétuo - Checklist Validado</title>
+    <style>
+        :root {
+            --primary-color: #e8491d;
+            --secondary-color: #35424a;
+            --text-color: #333;
+            --background-color: #f4f4f4;
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        header {
+            background: var(--secondary-color);
+            color: var(--white);
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .highlight {
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: var(--primary-color);
+            color: var(--white);
+            padding: 15px 30px;
+            margin-top: 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .cta-button:hover {
+            background: #ff6347;
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            margin: 40px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: var(--secondary-color);
+            text-align: center;
+            margin: 40px 0 20px;
+            font-size: 2em;
+        }
+
+        .audio-section {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        audio {
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .testimonials {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .testimonial {
+            flex-basis: calc(50% - 20px);
+            background: var(--white);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .testimonial:hover {
+            transform: translateY(-5px);
+        }
+
+        .testimonial img {
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .testimonial p {
+            font-style: italic;
+            color: #555;
+        }
+
+        .benefits {
+            background: var(--secondary-color);
+            color: var(--white);
+            padding: 40px;
+            margin-top: 40px;
+            border-radius: 10px;
+        }
+
+        .benefits h2 {
+            color: var(--primary-color);
+            margin-top: 0;
+        }
+
+        .benefits ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .benefits li {
+            padding: 15px 0;
+            border-bottom: 1px solid #4a5c66;
+            display: flex;
+            align-items: center;
+        }
+
+        .benefits li:last-child {
+            border-bottom: none;
+        }
+
+        .benefits li:before {
+            content: '✅';
+            margin-right: 10px;
+            font-size: 1.2em;
+        }
+
+        @media (max-width: 768px) {
+            .testimonial {
+                flex-basis: 100%;
+            }
+
+            header h1 {
+                font-size: 2em;
+            }
+
+            .cta-button {
+                padding: 12px 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Tenha em mãos o <span class="highlight">checklist validado</span> para implementar um funil perpétuo
+                lucrativo em APENAS 14 dias ou menos</h1>
+            <p>Aprenda um dos processos mais lucrativos do marketing digital, mesmo que você faça tudo sozinho</p>
+
+            <div id="video" class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0"
+                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            
+            <a href="#video" class="cta-button">QUERO IMPLEMENTAR MEU FUNIL</a>
+        </div>
+    </header>
+
+    <div class="container">
+
+
+        <h2>O SEGREDO PARA SEU PERPÉTUO</h2>
+        <div class="audio-section">
+            <p>Toque para ouvir o áudio explicativo</p>
+            <audio controls>
+                <source src="audio_explicativo.mp3" type="audio/mpeg">
+                Seu navegador não suporta o elemento de áudio.
+            </audio>
+        </div>
+
+        <div class="testimonials">
+            <div class="testimonial">
+                <img src="https://websim.ai/images/testimonial1.jpg" alt="Depoimento 1" width="300" height="200">
+                <p>"Mais tempo, menos estresse. O funil perpétuo mudou meu negócio!"</p>
+            </div>
+            <div class="testimonial">
+                <img src="https://websim.ai/images/testimonial2.jpg" alt="Depoimento 2" width="300" height="200">
+                <p>"Implementei em 10 dias e os resultados são incríveis. Recomendo!"</p>
+            </div>
+        </div>
+
+        <div class="benefits">
+            <h2>ACHA QUE É COMPLICADO IMPLEMENTAR UM FUNIL DE VENDAS NO PERPÉTUO?</h2>
+            <ul>
+                <li>Tenha um processo guiado passo a passo</li>
+                <li>Economize tempo com um checklist pronto e validado</li>
+                <li>Implemente seu funil mesmo que você seja iniciante</li>
+                <li>Veja como gerar vendas automaticamente todos os dias</li>
+            </ul>
+            <p>Descomplicar o processo garante confiança e consistência nos lucros com vendas na automação todos os
+                dias.</p>
+        </div>
+
+        <a href="#video" class="cta-button">QUERO IMPLEMENTAR MEU FUNIL AGORA</a>
+    </div>
+</body>
+
+</html>

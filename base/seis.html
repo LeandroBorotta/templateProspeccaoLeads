@@ -1,0 +1,126 @@
+<html>
+
+<head>
+    <base href="https://websim.ai" />
+    <title>Dúvidas Frequentes - Template Perpétuo Lucrativo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #111;
+            color: #fff;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ffd700;
+            margin-bottom: 40px;
+        }
+
+        .faq-item {
+            margin-bottom: 15px;
+            border-bottom: 1px solid #333;
+            padding-bottom: 15px;
+        }
+
+        .faq-question {
+            cursor: pointer;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-question::after {
+            content: '+';
+            color: #ffd700;
+            font-size: 20px;
+        }
+
+        .faq-answer {
+            display: none;
+            padding-top: 10px;
+        }
+
+        .faq-item.active .faq-question::after {
+            content: '-';
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .contact-button {
+            display: block;
+            width: 200px;
+            margin: 30px auto 0;
+            padding: 10px;
+            background-color: #1a472a;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>DÚVIDAS FREQUENTES</h1>
+    <div id="faq-container">
+        <div class="faq-item">
+            <div class="faq-question">O que é o Template Perpétuo Lucrativo?</div>
+            <div class="faq-answer">O Template Perpétuo Lucrativo é uma ferramenta para otimizar seus lançamentos e
+                vendas de infoprodutos.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Após ter feito a compra, como receberei o Template Perpétuo Lucrativo?</div>
+            <div class="faq-answer">Você receberá um email com instruções de acesso logo após a confirmação do
+                pagamento.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Não sei usar o Notion, vou conseguir usar o Template?</div>
+            <div class="faq-answer">Sim! O template é intuitivo e vem com instruções detalhadas. Além disso, oferecemos
+                suporte para ajudá-lo.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Ainda não tenho um infoproduto, serve para mim?</div>
+            <div class="faq-answer">Absolutamente! O template pode ajudá-lo a estruturar e planejar seu futuro
+                infoproduto desde o início.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Não tenho equipe, consigo usar o Template?</div>
+            <div class="faq-answer">Sim, o template é útil tanto para empreendedores solo quanto para equipes.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Tenho equipe, consigo delegar usando o Template?</div>
+            <div class="faq-answer">Certamente! O template facilita a delegação de tarefas e colaboração em equipe.
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Já tenho um perpétuo rodando, serve pra mim?</div>
+            <div class="faq-answer">Sim, você pode adaptar o template para otimizar seu lançamento perpétuo atual.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Serve para o meu nicho?</div>
+            <div class="faq-answer">O template é versátil e pode ser adaptado para diversos nichos de mercado.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">E se eu tiver alguma dúvida?</div>
+            <div class="faq-answer">Oferecemos suporte dedicado para esclarecer todas as suas dúvidas.</div>
+        </div>
+    </div>
+    <a href="https://websim.ai/c/whatsapp" class="contact-button">AINDA TENHO DÚVIDAS</a>
+
+    <script>
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentNode;
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
